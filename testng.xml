@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="PageObjectTestClasses.simpli_report_with_temp_test"/>
+      <class name="MavenTestNg.AppTest"/>
+      <class name="PageObjectTestClasses.normalDPcreationTest"/>
+      <class name="PageObjectTestClasses.intelliviewHistoricalDataTest"/>
+      <class name="MavenTestNg.TelemetryPage"/>
+      <class name="PageObjectClasses.createAggregatedDp"/>
+      <class name="PageObjectClasses.AggregatedDP_Conditional"/>
+      <class name="PageObjectTestClasses.setAlertDefinitionTst"/>
+      <class name="PageObjectClasses.LogInPage"/>
+      <class name="PageObjectTestClasses.parameterSelectionTest"/>
+      <class name="PageObjectClasses.setAlertDefinitions"/>
+      <class name="MavenTestNg.NewTest"/>
+      <class name="PageObjectClasses.simpli_report_with_temp"/>
+      <class name="PageObjectTestClasses.LogInTest"/>
+      <class name="PageObjectTestClasses.CreateAggregatedDPtest"/>
+      <class name="MavenTestNg.databaseConnection"/>
+      <class name="PageObjectClasses.intelliviewHistoricalData"/>
+      <class name="PageObjectClasses.normalDPcreation"/>
+      <class name="MavenTestNg.MavenTestNg.Initialization"/>
+      <class name="PageObjectTestClasses.aggregatedDP_condn_test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
