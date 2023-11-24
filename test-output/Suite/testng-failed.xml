@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Demo TestNg(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="MavenTestNg.MavenTestNg.TelemetryPage">
+      <class name="PageObjectTestClasses.simpli_report_with_temp_test">
         <methods>
-          <include name="historicalDataTest"/>
+          <include name="create_report"/>
+          <include name="setUP"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- MavenTestNg.MavenTestNg.TelemetryPage -->
+      </class> <!-- PageObjectTestClasses.simpli_report_with_temp_test -->
+      <class name="PageObjectTestClasses.CreateAggregatedDPtest">
+        <methods>
+          <include name="create_Agg_DP"/>
+        </methods>
+      </class> <!-- PageObjectTestClasses.CreateAggregatedDPtest -->
+      <class name="PageObjectTestClasses.setAlertDefinitionTst">
+        <methods>
+          <include name="setAlertDefinitions"/>
+        </methods>
+      </class> <!-- PageObjectTestClasses.setAlertDefinitionTst -->
+      <class name="PageObjectTestClasses.parameterSelectionTest">
+        <methods>
+          <include name="checkkVisibleDropdwn"/>
+        </methods>
+      </class> <!-- PageObjectTestClasses.parameterSelectionTest -->
     </classes>
-  </test> <!-- Demo TestNg(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

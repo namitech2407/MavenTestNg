@@ -104,7 +104,7 @@ public class simpli_report_with_temp {
 		String alertText = alert.getText();
 		if (alertText.equals("Report Name Already Exist..")) {
 			System.out.println("Report Name Already Exist..");
-			String newReportName = generateUniqueReportName(); // You'll need to implement this method
+			String newReportName = generateUniqueReportName(); //changed file name
 			driver.findElement(By.xpath("//input[contains(@type,'input')])[1]")).sendKeys(newReportName);
 			complete.click();
 		}else {

@@ -61,6 +61,11 @@ public class normalDPcreationTest {
 		ndp.opration_ndp();
 
 	}
+	@Test(priority = 6)
+	public void closeDriver() throws InterruptedException {
+		driver.quit();
+
+	}
 
 
 }

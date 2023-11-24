@@ -37,7 +37,7 @@ public class simpli_report_with_temp_test {
 		//log in
 		lPage.setUsername1("admin");
 		Thread.sleep(3000);
-		lPage.setPassword("123");
+		lPage.setPassword1("123");
 		Thread.sleep(3000);
 		lPage.ClickSubmit();
 		Thread.sleep(3000);
@@ -51,4 +51,10 @@ public class simpli_report_with_temp_test {
 	  srp.dragNDrop();
 	  srp.saveLatestReport();
   }
+  
+  @Test(priority = 2)
+	public void closeDriver() throws InterruptedException {
+		driver.quit();
+ }
+  
 }

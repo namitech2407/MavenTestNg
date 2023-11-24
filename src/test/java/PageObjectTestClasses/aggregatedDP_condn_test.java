@@ -67,5 +67,11 @@ public class aggregatedDP_condn_test {
 		condn.testAggregatedDP();
 
 	}
+	
+	@Test(priority = 3)
+	public void closeDriver() throws InterruptedException {
+		driver.quit();
+
+	}
 
 }

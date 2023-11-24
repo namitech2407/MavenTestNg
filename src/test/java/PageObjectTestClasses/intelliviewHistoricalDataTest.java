@@ -64,6 +64,11 @@ public class intelliviewHistoricalDataTest {
     	IHD.dwnld_btn();
     		
     }
+	@Test(priority = 5)
+	public void closeDriver() throws InterruptedException {
+		driver.quit();
+
+	}
     
   	
 }

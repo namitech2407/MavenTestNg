@@ -22,9 +22,7 @@ import PageObjectTestClasses.parameterSelectionTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class setAlertDefinitions extends intelliviewHistoricalDataTest {
-	private static final String css = null;
 	public WebDriver driver;
-	public LogInTest lTest;
 	parameterSelection param1;
 	LogInPage logIn1;
 
@@ -56,11 +54,11 @@ public class setAlertDefinitions extends intelliviewHistoricalDataTest {
 	private WebElement high_level_fault_text; 
 	@FindBy(xpath = "(//*[@id=\"updateParameter\"]/tbody/tr[1]/td[10]/ng-select)")
 	private WebElement int_llf_dpdwn; 
-	@FindBy(xpath = "(//div[contains(.,'SMS')])[14]")
+	@FindBy(xpath = "//span[@class='ng-option-label ng-star-inserted'][contains(.,'SMS')]")
 	private WebElement sms_llf; 
-	@FindBy(xpath = "//span[contains(.,'In App Notification')]")
+	@FindBy(xpath = "//span[@class='ng-option-label ng-star-inserted'][contains(.,'In App Notification')]")
 	private WebElement inAPP_llf; 
-	@FindBy(xpath = "(//div[contains(.,'Email')])[14]")
+	@FindBy(xpath = "//span[@class='ng-option-label ng-star-inserted'][contains(.,'Email')]")
 	private WebElement EMAIL_llf; 
 	@FindBy(xpath = "(//input[@class='ng-star-inserted'])[3]")
 	private WebElement int_lla_dpdwn;
@@ -94,28 +92,8 @@ public class setAlertDefinitions extends intelliviewHistoricalDataTest {
 	private WebElement ifSelected;
 	@FindBy(xpath = "(//div[contains(@class,'mat-radio-outer-circle')])[2]")
 	private WebElement userwise_Select;
-	
-	
+		
 
-	/*
-	
-	@Test(priority = 0)
-	public void initialization() throws InterruptedException {
-		logIn1 = new LogInPage(driver);
-		
-		setUP();
-		login();
-		
-	}
-		@Test(priority = 1)
-		public void parasel() throws InterruptedException {
-			//PageFactory.initElements(driver, this);
-			param1=new parameterSelection(driver);
-			param1.parameterSelection();
-			}
-*/
-	
-	@Test(priority = 2)
 	public void setThresholdValue() throws InterruptedException {
 		updateParameterSettings.click();
 		set_low_level_fault.clear();
@@ -134,7 +112,7 @@ public class setAlertDefinitions extends intelliviewHistoricalDataTest {
 
 	}
 	
-	@Test(priority = 3)
+	
 	public void setAlertText() throws InterruptedException {
 		updateParameterSettings.click();
 		low_level_fault_text.sendKeys("llf");
@@ -142,9 +120,9 @@ public class setAlertDefinitions extends intelliviewHistoricalDataTest {
 		high_level_alarm_text.sendKeys("hla");
 		high_level_fault_text.sendKeys("hlf");
 	}
-	@Test(priority = 4)
+	
 	public void setIntegrationModeLlf() throws InterruptedException {
-		//Select dropdown = new Select(int_llf_dpdwn);
+		//Select dropdown = new Select(int_llf_dpdwn); possible if class is select in dom but here is ng-select
 	int_llf_dpdwn.click();
 		//dropdown.selectByIndex(0);
 		//dropdown.selectByIndex(6);
@@ -163,8 +141,6 @@ public class setAlertDefinitions extends intelliviewHistoricalDataTest {
 	    */
 	}
 		
-		
-	@Test(priority = 5)
 	public void setIntegrationModeLla() throws InterruptedException {
 		
 		Actions actions = new Actions(driver);
@@ -198,7 +174,6 @@ public class setAlertDefinitions extends intelliviewHistoricalDataTest {
         }*/
 		
 		}	
-	@Test(priority = 6)
 public void setIntegrationModeHla() throws InterruptedException {
 		
 		Actions actions = new Actions(driver);
@@ -233,8 +208,6 @@ public void setIntegrationModeHla() throws InterruptedException {
 		*/
 		
 		}			
-				
-	@Test(priority = 7)
 	
 	public void setIntegrationModeHlf() throws InterruptedException {
 			
@@ -269,7 +242,7 @@ public void setIntegrationModeHla() throws InterruptedException {
 	        }
 			*/
 			}				
-	@Test(priority = 8)
+
 	public void AddUser() throws InterruptedException {
 			
 		addUser.click();

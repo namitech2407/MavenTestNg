@@ -57,12 +57,20 @@ public class setAlertDefinitionTst {
 		  public void setAlertDefinitions() throws InterruptedException {
 		  	alert=new setAlertDefinitions(driver);
 		 alert.setThresholdValue();
-		 alert.setAlertText();
+		 //alert.setAlertText();
 		 alert.setIntegrationModeLlf();
 		 alert.setIntegrationModeLla();
 		 alert.setIntegrationModeHla();
 		 alert.setIntegrationModeHlf();
+		 Thread.sleep(3000);
+		 alert.setAlertText();
 		 alert.AddUser();
   
   }
+		 /* @Test(priority = 5)
+			public void closeDriver() throws InterruptedException {
+				driver.quit();
+
+			}
+			*/
 }

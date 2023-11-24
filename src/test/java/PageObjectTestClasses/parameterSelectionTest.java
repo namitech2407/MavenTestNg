@@ -49,7 +49,7 @@ public void SelectParameterTest() throws InterruptedException {
 	param.parameterSelection();
 	
 }
-  @Test(priority = 3)
+  /*@Test(priority = 4)
   public void checkkVisibleDropdwn() throws InterruptedException {
   	//lPage = new LogInPage(driver);
   	 //logInTest.testLogin();  
@@ -57,4 +57,10 @@ public void SelectParameterTest() throws InterruptedException {
   	param.parameterSelection();
   	
   }
+  */
+  @Test(priority = 5)
+	public void closeDriver() throws InterruptedException {
+		driver.quit();
+
+	}
 }

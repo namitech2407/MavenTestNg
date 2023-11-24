@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjectTestClasses.simpli_report_with_temp_test">
+      <class name="PageObjectTestClasses.CreateAggregatedDPtest">
         <methods>
-          <include name="create_report"/>
-          <include name="setUP"/>
+          <include name="create_Agg_DP"/>
         </methods>
-      </class> <!-- PageObjectTestClasses.simpli_report_with_temp_test -->
+      </class> <!-- PageObjectTestClasses.CreateAggregatedDPtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

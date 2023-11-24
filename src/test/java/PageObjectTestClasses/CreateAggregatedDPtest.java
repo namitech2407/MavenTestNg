@@ -61,5 +61,10 @@ public class CreateAggregatedDPtest {
 		adp.checkDpCREATED();
 	
 	}
+	@Test(priority = 5)
+	public void closeDriver() throws InterruptedException {
+		driver.quit();
+
+	}
 	
 }
