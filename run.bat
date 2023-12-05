@@ -1,2 +1,2 @@
-cd F:\VegaAutomation\eclipse\MavenTestNg\MavenTestNg
+cd \\PTPL-238\MavenTestNg2\MavenTestNg
 mvn test
